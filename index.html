@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Movie Search
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div id="containerDiv"
+     class="container">
+      <div class="autocomplete"></div>
+      <div id="summary"></div>
+    </div>
+    <br><br>
+    <div>
+      <button id="compareMovies" class="button">
+          <b>Compare Movies</b>
+      </button>
+    </div>
+
+    <script src="movieUtilities.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="movie.js"></script>
+  </body>
+</html>
