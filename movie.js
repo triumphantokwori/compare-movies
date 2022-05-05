@@ -40,7 +40,7 @@ let leftMovie;
 let rightMovie;
 
 const onMovieSelect = async (movie, summaryElement, side) => {
-    const response = await axios.get('http://www.omdbapi.com/', {
+    const response = await axios.get('https://cors-everywhere.herokuapp.com/http://www.omdbapi.com/', {
         params : {
             apikey: '66c25d5e',
             i     : movie.imdbID
